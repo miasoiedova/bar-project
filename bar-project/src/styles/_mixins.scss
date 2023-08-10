@@ -1,0 +1,24 @@
+@mixin buttonFilter () {
+    font-size: var(--font-normal);
+    color: var(--color-primary);
+    background: url(../assets/check\ box.svg) left center no-repeat;
+    width: 100%;
+    appearance: none;
+    border: none;
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+@mixin borderPadding () {
+    border-bottom: var(--border-primary);
+    padding-bottom: 0.88rem;
+}
+
+@mixin linkPrimary {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: 1rem 5rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: var(--font-normal);
+}

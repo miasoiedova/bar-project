@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+:root {
+  --font-family-primary: Arial, Helvetica, sans-serif;
+  --font-family-title: "Oswald", sans-serif;
+  --font-xsmall: 12px;
+  --font-small: 14px;
+  --font-normal: 16px;
+  --font-big: 18px;
+  --font-xbig: 20px;
+  --color-primary: #FFFFFF;
+  --color-secondary: #151515;
+  --border-primary: 1px solid #FFFFFF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.7;
+}
+
+.link {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  padding: 1rem 5rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: var(--font-normal);
+}
+
+header {
+  height: 5.5rem;
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: var(--border-primary);
+}
+
+main {
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: row;
+  max-width: 1920px;
+}
+main .filter-container {
+  border-right: var(--border-primary);
+  border-bottom: var(--border-primary);
+  width: 12.5rem;
+  height: 30%;
+  padding: 2rem 7rem 2rem 3.75rem;
+  color: var(--color-primary);
+  font-size: var(--font-big);
+}
+main .filter-container h3 {
+  border-bottom: var(--border-primary);
+  padding-bottom: 0.88rem;
+}
+main .filter-container__types {
+  padding-top: 0.88rem;
+  border-bottom: var(--border-primary);
+  padding-bottom: 0.88rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.62rem;
+}
+main .filter-container__types .filterButton {
+  font-size: var(--font-normal);
+  color: var(--color-primary);
+  background: url(../assets/check\ box.svg) left center no-repeat;
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  text-align: left;
+  padding-left: 1.5rem;
+}
+main .filter-container__types .active {
+  background: url(../assets/checked.svg) no-repeat left center;
+}
+main .filter-container .clearButton {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: var(--color-primary);
+  border: none;
+  background-color: var(--color-secondary);
+  padding-top: 1rem;
+}
+
+.main-container {
+  padding: 2rem 3.75rem 4.15rem 1rem;
+  width: 100%;
+}
+.main-container__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  color: var(--color-primary);
+  padding-bottom: 2rem;
+}
+.main-container__header a {
+  text-decoration: none;
+  color: var(--color-primary);
+  font-size: var(--font-xsmall);
+}
+.main-container__header h1 {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.main-container__header form {
+  height: 2.375rem;
+}
+.main-container__header input {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  font-size: var(--font-normal);
+  height: calc(100% - 2px);
+  width: 12.5rem;
+  border: var(--border-primary);
+}
+.main-container__header button {
+  background: url(../assets/Vector.svg) no-repeat right 5% center, var(--color-primary);
+  color: var(--color-secondary);
+  font-size: var(--font-small);
+  border: none;
+  padding: 0.25rem 2rem 0.25rem 1rem;
+  height: 100%;
+  text-transform: uppercase;
+}
+.main-container__body .error {
+  color: var(--color-primary);
+}
+.main-container__body .row {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: space-between;
+  width: 100%;
+}
+.main-container__body .row .drinkCard {
+  border: var(--border-primary);
+  margin-bottom: 1.56rem;
+  width: 33.3333333333%;
+}
+.main-container__body .row .drinkCard img {
+  border-bottom: var(--border-primary);
+  width: 100%;
+}
+.main-container__body .row .drinkCard .drinkCard-content {
+  color: var(--color-primary);
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.25rem;
+}
+.main-container__body .row .drinkCard .drinkCard-content__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-container__body .row .drinkCard .drinkCard-content .name {
+  font-weight: 700;
+  font-size: var(--font-big);
+  text-transform: uppercase;
+}
+.main-container nav ul {
+  display: flex;
+  flex-direction: row;
+}
+.main-container nav ul li {
+  list-style: none;
+}
+.main-container nav ul li a {
+  text-decoration: none;
+  font-size: var(--font-normal);
+  color: var(--color-primary);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: var(--font-big);
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  padding: 1.8rem 3.75rem;
+  border-top: var(--border-primary);
+}
+footer .tel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+footer .social {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+}
+footer .social a {
+  width: 2.5rem;
+}
+footer .social .fb {
+  background: url(../assets/ph_facebook-logo.svg) no-repeat center;
+}
+footer .social .ig {
+  background: url(../assets/ph_instagram-logo.svg) no-repeat center;
+}
+footer .social .yt {
+  background: url(../assets/ph_youtube-logo.svg) no-repeat center;
+}/*# sourceMappingURL=app.css.map */
